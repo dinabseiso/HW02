@@ -29,10 +29,65 @@
 # Write your functions below:
 # Body
 
+##############
+### Part 1 ###
+##############
+
+def do_twice(f):
+	f()
+	f()
+
+def print_spam():
+	print 'spam'
+
+do_twice(print_spam)
+
+##############
+### Part 2 ###
+##############
+
+def do_twice(f, value):
+	f(value)
+	f(value)
+
+##############
+### Part 3 ###
+##############
+
+def print_twice(word):
+	print word
+	print word
+
+##############
+### Part 4 ###
+##############
+
+def do_twice(f, value):
+	f(value)
+	f(value)
+
+def print_twice(word):
+	print word
+	print word
+
+do_twice(print_twice, "spam")
+
+spam # Output
+spam
+spam
+spam
 
 
+##############
+### Part 5 ###
+##############
+
+def do_four(f, value):
+	do_twice(f, value)
+	do_twice(f, value)
 
 
+do_four(print_twice, "spam")
 
 
 # Write your functions above:

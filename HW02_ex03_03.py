@@ -15,8 +15,11 @@
 # Write your function below:
 # Body
 
-
-
+def right_justify(input):
+	word = len(input)
+	numberOfSpaces = 70 - word
+	line = " " * numberOfSpaces + input
+	print(line)
 
 
 

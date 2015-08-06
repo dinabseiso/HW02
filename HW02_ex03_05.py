@@ -35,8 +35,32 @@
 # Write your functions below:
 # Body
 
+def do_twice(f):
+	f()
+	f()
+
+def do_four(f):
+	do_twice(f)
+	do_twice(f)
+
+def dagger():
+	print "+ - - - -",
+
+def pillar():
+	print("|" + "	  ") * 2 + "  |"
 
 
+def box():
+	do_twice(dagger)
+	print("+")
+	do_four(pillar)
+	do_twice(dagger)
+	print("+")
+	do_four(pillar)
+	do_twice(dagger)
+	print("+")
+
+box()
 
 
 

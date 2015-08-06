@@ -23,9 +23,19 @@
 # Write your functions below:
 # Body
 
+def is_triangle(a, b, c):
+    if a + b > c and a + c > b and b + c > a :
+        print "Yes, these sides will form a closed triangle."
+    else : 
+        print "No, these sides will not form a closed triangle."    
 
 
-
+def check_stick_lengths():
+    prompt = "What is the length of a side? (do not enter units of measurement) \n"
+    a = int(raw_input(prompt))
+    b = int(raw_input(prompt))
+    c = int(raw_input(prompt))
+    is_triangle(a, b, c)
 
 
 
@@ -46,7 +56,12 @@ def main():
     """
     print("Hello World!")
 
+    is_triangle(1, 2, 3)
+    is_triangle(1, 2, 4)
+    is_triangle(1, 5, 3)
+    is_triangle(6, 2, 3)
 
+    check_stick_lengths()
 
 if __name__ == "__main__":
     main()
